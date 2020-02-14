@@ -8,11 +8,13 @@ def form():
     return render_template('form.html')
 
 
-@app.route('/result', methods=['POST'])
-def form_post():
-    text = request.form['text']
-    processed_text = text.upper()
-    return render_template('result.html', result=processed_text)
+@app.route('/result', methods=['POST', 'GET'])
+def result():
+    if request.method == 'POST':
+        text = request.form['text']
+    elif request.method == 'GET':
+        text = "ERROR: Fill out form on main page"
+    return render_template('result.html', result=text)
 
 
 if __name__ == '__main__':
