@@ -8,7 +8,7 @@ def form():
     return render_template('form.html')
 
 
-@app.route('/', methods=['POST'])
+@app.route('/result', methods=['POST'])
 def form_post():
     text = request.form['text']
     processed_text = text.upper()
