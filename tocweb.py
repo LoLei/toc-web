@@ -1,3 +1,5 @@
+import sys
+from tug_overlap_checker import tug_overlap_checker
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
@@ -17,5 +19,11 @@ def result():
     return render_template('result.html', result=text)
 
 
-if __name__ == '__main__':
+def main():
+    sys.argv += ['123 234']
+    tug_overlap_checker.main()
     app.run(debug=True)
+
+
+if __name__ == '__main__':
+    main()
