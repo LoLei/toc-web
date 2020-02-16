@@ -1,4 +1,3 @@
-import sys
 from tug_overlap_checker import tug_overlap_checker
 from flask import Flask, request, render_template
 
@@ -20,8 +19,7 @@ def result():
 
 
 def main():
-    sys.argv += ['123 234']
-    tug_overlap_checker.main()
+    tug_overlap_checker.main(raw_args=['123 234'])
     app.run(debug=True)
 
 
