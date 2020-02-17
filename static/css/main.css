@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #3F5F5F;
+  background: snow;
   color: #444;
 }
 
@@ -16,8 +16,8 @@ div {
   height: 50%;
 
   padding: 20px;  
-  background: darkslategray;
-  color: white;
+  background: gainsboro;
+  color: black;
   text-align: center;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }

@@ -19,7 +19,7 @@ def result():
 
 
 def main():
-    tug_overlap_checker.main(raw_args=['123 234'])
+    # tug_overlap_checker.main(raw_args=['123 234'])
     app.run(debug=True)
 
 
