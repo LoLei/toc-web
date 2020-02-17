@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: snow;
+  background: gray;
   color: #444;
 }
 
@@ -16,8 +16,19 @@ div {
   height: 50%;
 
   padding: 20px;  
-  background: gainsboro;
-  color: black;
+  background: dimgray;
+  color: white;
   text-align: center;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea {
+  background: lightgray;
+  width: 50%;
+  padding: 1em 1em;
+  margin: 0.5em 0;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  border: none;
+  border-bottom: 0.25em solid #3a3a3a;
 }
