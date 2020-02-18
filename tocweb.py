@@ -18,6 +18,9 @@ def result():
         lines = [l.rstrip() for l in lines]
         print(lines)
 
+        res = tug_overlap_checker.main(raw_args=['123 234'])
+        print(res)
+
         return render_template('result.html', result=text)
     elif request.method == 'GET':
         text = "ERROR: Fill out form on main page"
@@ -25,7 +28,6 @@ def result():
 
 
 def main():
-    # tug_overlap_checker.main(raw_args=['123 234'])
     app.run(debug=True)
 
 

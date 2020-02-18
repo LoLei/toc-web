@@ -22,6 +22,14 @@ div {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
+div#loading {
+    width: 35px;
+    height: 35px;
+    display: none;
+    background: url(/static/img/loader.gif) no-repeat;
+    cursor: wait;
+    }
+
 input, textarea {
   background: lightgray;
   width: 50%;

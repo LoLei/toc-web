@@ -3,15 +3,25 @@
   <head>
     <title>TOC Web</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script type="text/javascript">// <![CDATA[
+      function sim_loading(){
+        console.log("sim_loading() called")
+        let loading = document.getElementById("loading");
+        loading.style.display = "block";
+        let content = document.getElementById("content");
+        content.style.display = "none";
+      }
+    // ]]></script>
   </head>
   <body>
     <header>
-      <div class="container">
+      <div id="loading"></div>
+      <div class="container" id="content">
         <p>Enter course IDs (one each row):</p>
         <form action="/result" method="POST">
             <textarea name="text" rows="3" cols="30"></textarea>
             <br><br>
-            <input type="submit">
+            <input type="submit" name="anything_submit" value="Submit" onclick="sim_loading()">
         </form>
       </div>
     </header>
