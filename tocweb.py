@@ -18,7 +18,7 @@ def result():
         lines = [l.rstrip() for l in lines]
         print(lines)
 
-        res = tug_overlap_checker.main(raw_args=['123 234'])
+        res = tug_overlap_checker.main(raw_args=lines)
         print(res)
 
         return render_template('result.html', result=text)
