@@ -26,12 +26,19 @@ div#content {
 }
 
 div#loading {
-    width: 35px;
-    height: 35px;
-    display: none;
-    background: url(/static/img/loader.gif) no-repeat;
-    cursor: wait;
-    }
+  width: 35px;
+  height: 35px;
+  display: none;
+  background: url(/static/img/loader.gif) no-repeat;
+  cursor: wait;
+}
+
+div#result {
+  font: normal 10pt 'Courier New';
+  width: 300px;
+  height: 300px;
+  overflow: scroll;"
+}
 
 input, textarea {
   background: lightgray;
