@@ -6,7 +6,7 @@ body {
   color: #444;
 }
 
-div {
+div.container {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -19,13 +19,14 @@ div {
   background: dimgray;
   color: white;
   text-align: center;
-}
-
-div#content {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 div#loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 35px;
   height: 35px;
   display: none;
@@ -34,10 +35,11 @@ div#loading {
 }
 
 div#result {
-  font: normal 10pt 'Courier New';
-  width: 300px;
-  height: 300px;
-  overflow: scroll;"
+  font: normal 12pt 'Courier New';
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  text-align: left;
 }
 
 input, textarea {
