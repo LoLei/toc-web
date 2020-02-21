@@ -1,6 +1,5 @@
 import contextlib
 import io
-import re
 from tug_overlap_checker import tug_overlap_checker
 from flask import Flask, request, render_template
 
@@ -27,12 +26,9 @@ def result():
         output = f.getvalue()
         print("captured: {}".format(output))
 
-        # ansi_escape = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
-        # output = ansi_escape.sub('', output)
-
         # CBA'd changing it in toc
-        output = output.replace("[93m", "<b>")
-        output = output.replace("[0m", "</b>")
+        output = output.replace("[93m", "<font color=\"red\"><b>")
+        output = output.replace("[0m", "</b></font>")
 
         return render_template('result.html', result=output)
     elif request.method == 'GET':
