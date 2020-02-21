@@ -17,7 +17,7 @@ def result():
         # Get the submitted course IDs
         text = request.form['text']
         lines = text.split('\n')
-        lines = [l.rstrip() for l in lines]
+        lines = [l.strip() for l in lines]
         print(lines)
 
         f = io.StringIO()
