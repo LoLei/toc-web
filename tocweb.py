@@ -31,8 +31,8 @@ def result():
         # output = ansi_escape.sub('', output)
 
         # CBA'd changing it in toc
-        # output = output.replace("[93m", "<b>")
-        # output = output.replace("[0m", "</b>")
+        output = output.replace("[93m", "<b>")
+        output = output.replace("[0m", "</b>")
 
         return render_template('result.html', result=output)
     elif request.method == 'GET':
