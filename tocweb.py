@@ -27,7 +27,7 @@ def result():
         print("captured: {}".format(output))
 
         # CBA'd changing it in toc
-        output = output.replace("[93m", "<font color=\"red\"><b>")
+        output = output.replace("[93m", "<font color=\"indianred\"><b>")
         output = output.replace("[0m", "</b></font>")
 
         return render_template('result.html', result=output)
