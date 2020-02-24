@@ -1,1 +1,1 @@
-web: gunicorn app.tocweb:app
+web: gunicorn app:app
